@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apt'
+cookbook 'git'
+cookbook 'erlang'
+
+cookbook 'riak',
+  :git => 'https://github.com/basho/riak-chef-cookbook'
+  
+cookbook 'riakcs',
+  :git => 'https://github.com/basho/riak-cs-chef-cookbook'
